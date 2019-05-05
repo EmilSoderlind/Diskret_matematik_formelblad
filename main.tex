@@ -31,7 +31,12 @@
 
 \begin{document}
 \begin{multicols}{2}
-\section{Talteori\footnote{Compiled on \today\ at \currenttime \ GMT\\\href{https://github.com/SkruvdragarN/Diskret_matematik_formelblad}{\url{GitHub.com/SkruvdragarN/Diskret_matematik_formelblad.git}}}}
+\section*{Diskret matematik - Formelblad\footnote{Med reservation för att alltsammans kan vara felaktigt och okomplett.}}
+Compiled on \today\ at \currenttime \ GMT. Formelblad på GitHub: \href{https://github.com/SkruvdragarN/Diskret_matematik_formelblad}{\url{GitHub.com/SkruvdragarN/Diskret_matematik_formelblad}}\\
+\includegraphics[width=0.2\textwidth]{images/qr}
+\includegraphics[width=0.25\textwidth]{images/knug}
+
+\section{Talteori}
 \textbf{Definition:} The function $f$ from $X$ to $Y$ is a \textbf{surjection} if every $y$ in $Y$ is a value $f(x)$ for \textit{at least one} $x$ in $X$. It is a \textbf{injection} if every $y$ in $Y$ is a value $f(x)$ for \textit{at most one} $x$ in $X$. It is a \textbf{bijection} if it is both a surjection and an injection, that is, if every $y$ in $Y$ is a value $f(x)$ for \textit{exacly one} $x$ in $X$.\\
 \newline
 \textbf{Primtal-test}:
@@ -246,10 +251,6 @@ Ett \textbf{rotat träd} är träd där man valt ut en nod i trädet, och kallar
 \textbf{Definition:} A \textbf{vertex colouring} of a graph $G = (V,E)$ is a function $c: V \rightarrow \mathbb{N}$ with the property that $$c(x) \neq c(y) \quad whenever \quad \{x,y\} \in E$$
 \newline
 \textbf{Definition:} The \textbf{chromatic number} (\textbf{hörnkromatiska talet}) of $G$, written $\chi(G)$, is defined to be the least integer $k$ for which there is vertex colouring $c$ which is a function from $V$ to $\mathbb{N}_k$, and $k$ is the least integer with this property.\\
-
-\includegraphics[width=0.15\textwidth]{images/greedy}
-\includegraphics[width=0.22\textwidth]{images/knug} 
-
 \subsection{Spanning trees}
 Suppose that $G=(V,E)$ is a connected graph, and $T$ is a subset of $E$ such that: \textbf{1.} Every vertex of $G$ belongs to an edge in $T$; \textbf{2.} the edges in $T$ form a tree. In this case, we say that $T$ is a \textbf{spanning tree} for $G$.
 
