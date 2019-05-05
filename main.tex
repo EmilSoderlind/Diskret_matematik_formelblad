@@ -116,7 +116,7 @@ $$\phi(a*b) = \phi(a)*\phi(b) \quad om \ gcd(a,b)=1$$
 \subsection{Permutations}
 
 Cyklisk notation: $\alpha = (124)(35)$ och $\beta = (13)(25)(4)$ ger:\\
-\includegraphics[width=0.12\textwidth]{partition}\\ Dvs $\beta \alpha = (15)(243)$. Först $\alpha$ sedan $\beta$. 
+\includegraphics[width=0.12\textwidth]{images/partition}\\ Dvs $\beta \alpha = (15)(243)$. Först $\alpha$ sedan $\beta$. 
 För att återfå samma permutation kan du blanda $k$ gånger. Där $k$ är den minsta gemensamma nämnare av cyklernas storlek. Minsta gemensamma nämnare till 2 och 8 är 8. Invers: $(\beta \alpha)^{-1} = (51)(342)$
 
 \subsection{Binomial numbers}
@@ -212,8 +212,8 @@ Notera att $\binom{n}{n_1,n_2,...,n_k}$ är det ett \textit{multinomial number},
 $X_0 = [0]_3 = \{...,-3,0,3,6,...\} \quad X_1 = [1]_3 = \{...,-2,1,4,7,...\} \quad X_2 = [2]_3 = \{...,-1,2,5,8,...\}$ \quad $7+5=0 \ (i \ \mathbb{Z}_3) \ \iff \ [7]_3 \oplus [5]_3 = [0]_3$\\
 \newline
 Talen i $X_P = [P]_3$ har alla rest $P$ vid division med 3.\\
-\includegraphics[width=0.095\textwidth]{mod}
-\includegraphics[width=0.3\textwidth]{this_is_fine}\\
+\includegraphics[width=0.095\textwidth]{images/mod}
+\includegraphics[width=0.3\textwidth]{images/this_is_fine}\\
 \textbf{Theorem 13.3.1}\\
 The element $r$ in $\mathbb{Z}_m$ is invertible if and only if $r$ and $m$ are coprime in $\mathbb{Z}$. In particular, when $p$ is a prime every element of $\mathbb{Z}_p$ except 0 is invertible.\\
 \newline
@@ -246,8 +246,8 @@ Ett \textbf{rotat träd} är träd där man valt ut en nod i trädet, och kallar
 \newline
 \textbf{Definition:} The \textbf{chromatic number} (\textbf{hörnkromatiska talet}) of $G$, written $\chi(G)$, is defined to be the least integer $k$ for which there is vertex colouring $c$ which is a function from $V$ to $\mathbb{N}_k$, and $k$ is the least integer with this property.\\
 
-\includegraphics[width=0.15\textwidth]{greedy}
-\includegraphics[width=0.22\textwidth]{knug} 
+\includegraphics[width=0.15\textwidth]{images/greedy}
+\includegraphics[width=0.22\textwidth]{images/knug} 
 
 \subsection{Spanning trees}
 Suppose that $G=(V,E)$ is a connected graph, and $T$ is a subset of $E$ such that: \textbf{1.} Every vertex of $G$ belongs to an edge in $T$; \textbf{2.} the edges in $T$ form a tree. In this case, we say that $T$ is a \textbf{spanning tree} for $G$.
@@ -258,15 +258,15 @@ Sorterar listan $4,8,7,1,9,3,2,5,6$. Först fylls noderna i ett binärt träd me
 \begin{multicols}{2}
     \begin{enumerate}
         \item Först fylls noderna i ett binärt träd med elementen i listan.\\
-        \includegraphics[width=0.2\textwidth]{heap1}
+        \includegraphics[width=0.2\textwidth]{images/heap1}
         \item Nu ska trädet omvandlas till en heap genom att byta plats på element så att alla fäder innehåller ett lägre värde än sina söner. Vi börjar med delträdet till vänster $(1,5,6)$ och sedan delträdet till höger $(2,3,7)$.\\
-        \includegraphics[width=0.2\textwidth]{heap2}
+        \includegraphics[width=0.2\textwidth]{images/heap2}
         \item Vi fortsätter sedan med det vänstra delträdet $(1,5,9,8,6)$ nedan och byter plats på 8 och 1 följt av 8 och 5.\\
-        \includegraphics[width=0.2\textwidth]{heap3}
+        \includegraphics[width=0.2\textwidth]{images/heap3}
         \item Avslutningsvis behandlas hela trädet med bytet mellan 4 och 1.\\
-        \includegraphics[width=0.2\textwidth]{heap4}
+        \includegraphics[width=0.2\textwidth]{images/heap4}
         \item Trädet är nu en heap och det minsta elementet finns i roten. Vi tar bort detta element och ersätter det men det element som ligger längst ner till höger, d.v.s. elementet 6. Vi uppdaterar därefter trädet genom att byta plats på 6 och 2 följt av 6 och 3.\\
-        \includegraphics[width=0.2\textwidth]{heap5}
+        \includegraphics[width=0.2\textwidth]{images/heap5}
     \end{enumerate}
     Antal jämförelser: $O(n*log(n))$. Antal byten: $O(n*log(n))$.
 \end{multicols}
@@ -282,29 +282,29 @@ Antal jämförelser: $O(n^2)$. Antal byten: $O(n^2)$.
 
 \subsubsection{Insertion sort}
 The basic idea of insertion sorting is to begin with the list $L=(x_1)$ and insert $x_i$ in its correct place in the list for $i =2,3,...,n$. For example, if $x_1,x_2,...,x_8$ are the integers $47,73,21,45,28,69,19,23$, the list is built up as shown below:\\
-\includegraphics[width=0.24\textwidth]{insertion}\\
+\includegraphics[width=0.24\textwidth]{images/insertion}\\
 Antal jämförelser: $O(n*log(n))$. Antal byten: $O(n*log(n))$. Om man använder \textit{bisection} metoden, dvs veta vilken halva av listan som $x$ ska placeras i.
 
 \subsection{Greedy vertex colouring algorithm}
-\includegraphics[width=0.23\textwidth]{color_alg}\\
+\includegraphics[width=0.23\textwidth]{images/color_alg}\\
 Färgningen av kanter får ske i godtycklig ordning.
 
 \subsection{Minimum spanning tree problem (MST)}
 At each stage we add the \textit{cheapest} edge joining a new vertex to the partial tree (If several edges with the same weight are available we can select any of them).
 
-\includegraphics[width=0.4\textwidth]{prim}
+\includegraphics[width=0.4\textwidth]{images/prim}
 
 \subsection{Depth-first search (DFS)}
-\includegraphics[width=0.25\textwidth]{DFS_alg}
-\includegraphics[width=0.2\textwidth]{DFS_dia}
+\includegraphics[width=0.25\textwidth]{images/DFS_alg}
+\includegraphics[width=0.2\textwidth]{images/DFS_dia}
 
 
 \subsection{Breadth-first search (BFS)}
-\includegraphics[width=0.25\textwidth]{BFS_alg}
-\includegraphics[width=0.2\textwidth]{BFS_dia}
+\includegraphics[width=0.25\textwidth]{images/BFS_alg}
+\includegraphics[width=0.2\textwidth]{images/BFS_dia}
 
 \subsection{Shortest path problem (Dijkstras algoritm)}
-\includegraphics[width=0.48\textwidth]{kortast}
+\includegraphics[width=0.48\textwidth]{images/kortast}
 Förklaring: $S$ är mängden av alla besökta kanter. (*) 6:an i bilden (ab) ges av $min(L(b),L(a)+w(ab))=min(6,3+\infty)=6$, där $L(b)$ är den tidigare vägen till $b$ och $w(ab)$ är vikten på kanten $ab$ vilket inte existerar och därmed är $\infty$. Till höger i bild är det minimalt uppspännande trädet som erhålls från kant-kolumnen. \textbf{På en tenta} blir våra kära matematiker mycket glada om du bifogar det minimalt uppspännande trädet.
     \subsection{Bipartite \& Matchings}
     
