@@ -6,8 +6,10 @@ Formelblad till 'Introduktion till diskret matematik' (UMU-58104) vid Umeå Univ
 En PDF kan laddas hem från Overleaf-projektet: [länk](https://www.overleaf.com/read/tzszzswkcdhq)
 
 ### Generera en PDF från .tex-fil
-För att generera en PDF från LaTeX-filen kör samma eller motsvarande:  
+För att klona hem och generera en PDF från LaTeX-filen kör samma eller motsvarande:  
 ```console
+$ git clone https://github.com/SkruvdragarN/Diskret_matematik_formelblad
+$ cd Diskret_matematik_formelblad/
 $ pdflatex main.tex
 ```
 En genererad main.pdf skapas som lämpligtvis kan ånjutas tillsammans passande tilltugg.
