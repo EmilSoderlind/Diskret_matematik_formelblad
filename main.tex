@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[margin=0.2in]{geometry}
 \usepackage{amsmath}
@@ -30,7 +31,7 @@
 
 \begin{document}
 \begin{multicols}{2}
-\section{Talteori\footnote{Compiled on \today\ at \currenttime \ GMT}}
+\section{Talteori\footnote{Compiled on \today\ at \currenttime \ GMT\\\href{https://github.com/SkruvdragarN/Diskret_matematik_formelblad}{\url{GitHub.com/SkruvdragarN/Diskret_matematik_formelblad.git}}}}
 \textbf{Definition:} The function $f$ from $X$ to $Y$ is a \textbf{surjection} if every $y$ in $Y$ is a value $f(x)$ for \textit{at least one} $x$ in $X$. It is a \textbf{injection} if every $y$ in $Y$ is a value $f(x)$ for \textit{at most one} $x$ in $X$. It is a \textbf{bijection} if it is both a surjection and an injection, that is, if every $y$ in $Y$ is a value $f(x)$ for \textit{exacly one} $x$ in $X$.\\
 \newline
 \textbf{Primtal-test}:
@@ -282,7 +283,7 @@ Antal jämförelser: $O(n^2)$. Antal byten: $O(n^2)$.
 
 \subsubsection{Insertion sort}
 The basic idea of insertion sorting is to begin with the list $L=(x_1)$ and insert $x_i$ in its correct place in the list for $i =2,3,...,n$. For example, if $x_1,x_2,...,x_8$ are the integers $47,73,21,45,28,69,19,23$, the list is built up as shown below:\\
-\includegraphics[width=0.24\textwidth]{images/insertion}\\
+\includegraphics[width=0.21\textwidth]{images/insertion}\\
 Antal jämförelser: $O(n*log(n))$. Antal byten: $O(n*log(n))$. Om man använder \textit{bisection} metoden, dvs veta vilken halva av listan som $x$ ska placeras i.
 
 \subsection{Greedy vertex colouring algorithm}
@@ -292,11 +293,9 @@ Färgningen av kanter får ske i godtycklig ordning.
 \subsection{Minimum spanning tree problem (MST)}
 At each stage we add the \textit{cheapest} edge joining a new vertex to the partial tree (If several edges with the same weight are available we can select any of them).
 
-\includegraphics[width=0.4\textwidth]{images/prim}
-
 \subsection{Depth-first search (DFS)}
 \includegraphics[width=0.25\textwidth]{images/DFS_alg}
-\includegraphics[width=0.2\textwidth]{images/DFS_dia}
+\includegraphics[width=0.17\textwidth]{images/DFS_dia}
 
 
 \subsection{Breadth-first search (BFS)}
